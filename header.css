@@ -1,0 +1,67 @@
+body{
+  background-color: #000;
+  color: white;
+  font-family: system-ui;
+  margin-left: 10px;
+
+  padding-bottom: 1000px;
+}
+.heading, .left-header-section{
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial;
+  z-index: 1000;
+}
+
+.left-header-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 15px;
+  margin-right: 100px;
+  width: max(100px, 600px);
+}
+
+.left-text{
+  margin-right: 30px;
+  cursor: pointer;
+  display: block;
+}
+
+.instrument {
+  font-size:max(10px, 40px);
+  font-family: Arial, Helvetica, sans-serif;
+  width: max(100px, 400px);
+}
+
+.heading{
+    font-weight: 600;
+    position: fixed;
+    background-color: black;
+height: 100px;
+
+margin-top:-10px;
+}
+.left-wwd:hover, .left-waw:hover, .left-begin:hover, .left-bh:hover{
+    color: cyan;
+    transition: 0.3s;
+    text-decoration: dotted underline;
+
+    background:linear-gradient( white, cyan);
+   background-clip: text;
+   color: transparent;
+}
+
+.instrument:hover {
+  background:linear-gradient( white, cyan);
+   background-clip: text;
+   color: transparent;
+}
+
+
+
+

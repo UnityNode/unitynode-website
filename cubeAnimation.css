@@ -1,0 +1,131 @@
+/* cubeAnimation.css */
+.prism {
+  width: 140px;
+  height: 140px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: float 4s ease-in-out infinite alternate;
+  cursor: pointer;
+}
+
+#prism {
+    margin-left: 1250px;
+    margin-top: -300px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+
+.face{
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  background: 140px;
+  background: linear-gradient(145deg, rgba(
+    255, 255, 255, 0.25), rgba(0, 0, 0, 0.1));
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  backdrop-filter: blur(6px);
+  
+  transform-style: preserve-3d;
+  box-shadow: 0 0 25px rgba(
+     0, 255, 255, 0.2);  
+
+     font-size:50px;
+      color:white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+ 
+}
+
+
+.f1 {
+  transform: rotateY(0deg) translateZ(70px);
+}
+.f2 {
+  transform: rotateY(90deg) translateZ(70px);
+}
+.f3 {
+  transform: rotateY(180deg) translateZ(70px);
+}
+.f4 {
+  transform: rotateY(-90deg) translateZ(70px);
+}
+.f5 {
+  transform: rotateY(90deg) translateZ(70px);
+}
+.f6 {
+  transform: rotateY(-90deg) translateZ(70px);
+}
+
+@keyframes float {
+  0% {transform: rotateX(20deg) rotateY(20deg) translateY(-20px);}
+
+  100% {transform: rotateX(40deg) rotateY(200deg) translateY(20px);}
+}
+
+.prism .face{
+  animation: prismGlow 1s  linear infinite;
+}
+
+@keyframes prismGlow {
+  /*
+  0% {box-shadow: 0 0 20px rgba(130, 99, 224, 0.25);}
+  50% {box-shadow: 0 0 40px rgba(255, 0, 255, 0.35);}
+  100% {box-shadow: 0 0 20px rgba(169, 249, 56, 0.25);}*/
+
+ /* 
+  0% {box-shadow: 0 0 20px white}
+  50% {box-shadow: 0 0 0px skyblue}
+  100% {box-shadow: 0 0 20px white}
+*/
+
+
+/*
+ 0% {box-shadow: 0 0 20px #b22234;}
+  50% {box-shadow: 0 0 40px #ffffff}
+  100% {box-shadow: 0 0 20px #3c3b6e;}*/
+
+  /* 0% {box-shadow: 0 0 20px #0078ff;}
+  25% {box-shadow: 0 0 40px #bd00ff}
+  50% {box-shadow: 0 0 20px #ff9a00}
+  75% {box-shadow: 0 0 20px #01ff1f}
+  100% {box-shadow: 0 0 20px #e3ff00}
+  */
+
+  0% {box-shadow: 0 0 20px rgba(130, 99, 224, 0.25);}
+  10% {box-shadow: 0 0 40px rgba(255, 0, 255, 0.35);}
+  15% {box-shadow: 0 0 20px rgba(169, 249, 56, 0.25);}
+
+  
+  20% {box-shadow: 0 0 20px white}
+  25% {box-shadow: 0 0 400px skyblue}
+  30% {box-shadow: 0 0 20px white}
+
+
+
+ 35% {box-shadow: 0 0 20px #b22234;}
+  40% {box-shadow: 0 0 400px #ffffff}
+  45% {box-shadow: 0 0 20px #3c3b6e;}
+
+   50% {box-shadow: 0 0 20px skyblue;}
+  55% {box-shadow: 0 0 40px #bd00ff}
+  60% {box-shadow: 0 0 20px white}
+  65% {box-shadow: 0 0 40px #01ff1f}
+  70% {box-shadow: 0 0 20px skyblue}
+
+  75% {box-shadow: 0 0 20px pink}
+  80% {box-shadow: 0 0 400px #87ceeb;}
+  85% {box-shadow: 0 0 400px white}
+  90% {box-shadow: 0 0 40px red}
+  95% {box-shadow: 0 0 20px skyblue}
+
+  0% {box-shadow: 0 0 20px white}
+
+  
+}
+
+
+
